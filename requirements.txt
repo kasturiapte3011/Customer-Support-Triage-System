@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langchain
+langchain-core
+langchain-openai
+requests
+sqlite-utils
+pydantic
+streamlit
+requests

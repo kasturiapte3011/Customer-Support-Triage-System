@@ -1,0 +1,12 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Install only UI dependencies
+COPY requirements/ui.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy UI code only
+COPY ui ./ui
+
+EXPOSE 8501
